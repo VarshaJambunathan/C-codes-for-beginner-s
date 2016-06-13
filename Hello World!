@@ -1,0 +1,8 @@
+//A simple C code to display "Hello World" : This ia a single-line comment 
+#include <stdio.h>  //Pre-processor directives
+
+int main()          // main() function
+{
+  printf("Hello world\n");   // printf is the keyword to print a message on the screen
+  return 0;                 // returns a value to the calling function to notify successful or wrongful execution of the snippet 
+}
