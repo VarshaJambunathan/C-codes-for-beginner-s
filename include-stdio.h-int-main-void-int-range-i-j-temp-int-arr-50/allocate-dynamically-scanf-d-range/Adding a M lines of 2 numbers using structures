@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+struct sum
+{
+	long int a,b;
+};
+
+int main(void) {
+	
+	struct sum ob[100000000];
+	long int t;
+	int i;
+	
+	scanf("%ld",&t);
+	
+	for(i=1;i<=t;i++)
+	{
+		scanf("%ld %ld",&ob[i].a, &ob[i].b);
+		printf("%ld\n", ob[i].a + ob[i].b);
+	}
+	
+	return 0;
+}
