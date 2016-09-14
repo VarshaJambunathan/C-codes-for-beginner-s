@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+struct prime{
+	int start,end;
+};
+	
+int main(void) {
+
+	int t=0,i=0,j=0,count=0,k=0;
+	struct prime a[20];
+	printf("Enter the number of cases for prime calculation\n");
+	scanf("%d",&t);
+	
+	printf("Enter the start and end values for prime number generation\n");
+	for(i=1;i<=t;i++){
+		scanf("%d %d",&a[i].start,&a[i].end);
+	}
+	
+	k=1;
+	while(k<=t){
+	  printf("Set %d :\n",k);
+		for(i=a[k].start;i<=a[k].end;i++){
+		  count=0;
+			for(j=1;j<=i;j++){
+				if(i%j==0){
+					count++;
+				}
+			}
+			if(count==2){
+				printf("%d\n",i);
+			}
+		}
+		printf("\n");
+		k++;
+	}
+	return 0;
+}
